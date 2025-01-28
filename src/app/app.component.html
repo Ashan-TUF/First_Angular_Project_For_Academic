@@ -1,5 +1,9 @@
+<input type="text"
+       #inputValuAshan
+       (keyup)="printData(inputValuAshan.value)">
 <button [class.active]="isActive"
         [style.font-size]="fonsSize"
         (click)="changeFontSize()"
 >Click State
 </button>
+{{customerName}}
