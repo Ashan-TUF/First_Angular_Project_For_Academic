@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {ContactComponent} from "./contact/contact.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,ContactComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'app1';
+isActive:boolean = false;
+fonsSize:string= '50px';
+changeFontSize():void{
+  this.fonsSize='20px';
+}
 }
