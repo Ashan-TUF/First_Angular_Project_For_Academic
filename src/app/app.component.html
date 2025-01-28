@@ -1,3 +1,5 @@
-<h1>Hi Team</h1>
-<hr>
-<app-contact></app-contact>
+<button [class.active]="isActive"
+        [style.font-size]="fonsSize"
+        (click)="changeFontSize()"
+>Click State
+</button>
