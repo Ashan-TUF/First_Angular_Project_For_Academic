@@ -1,9 +1,16 @@
-<input type="text"
-       #inputValuAshan
-       (keyup)="printData(inputValuAshan.value)">
-<button [class.active]="isActive"
-        [style.font-size]="fonsSize"
-        (click)="changeFontSize()"
->Click State
-</button>
-{{customerName}}
+<ul>
+  <li>
+    <a routerLinkActive="active" routerLink="/home">Home</a>
+  </li>
+  <li>
+    <a routerLinkActive="active" routerLink="/contact">Contact</a>
+  </li>
+  <li>
+    <a routerLinkActive="active" routerLink="/about">About</a>
+  </li>
+  <li>
+    <a routerLinkActive="active" routerLink="/service">Services</a>
+  </li>
+</ul>
+<hr/>
+<router-outlet/>
