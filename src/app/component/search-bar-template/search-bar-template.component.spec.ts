@@ -11,7 +11,7 @@ describe('SearchBarTemplateComponent', () => {
       imports: [SearchBarTemplateComponent]
     })
     .compileComponents();
-
+    
     fixture = TestBed.createComponent(SearchBarTemplateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

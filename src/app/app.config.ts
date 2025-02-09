@@ -5,6 +5,7 @@ import {routes} from './app.routes';
 import {provideClientHydration} from '@angular/platform-browser';
 import {provideHttpClient, withFetch, withInterceptors} from "@angular/common/http";
 import {httpManagerInterceptor} from "./interceptor/http-manager.interceptor";
+import {HashLocationStrategy, LocationStrategy} from "@angular/common";
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -13,6 +14,7 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(
       withInterceptors([httpManagerInterceptor]),
       withFetch()
-    )
+    ),
+    {provide:LocationStrategy, useClass:HashLocationStrategy}
   ]
 };

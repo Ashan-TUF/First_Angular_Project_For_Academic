@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 import {CurrencyPipe, NgForOf} from "@angular/common";
 import {CustomerTemplateComponent} from "../customer-template/customer-template.component";
 
@@ -14,36 +14,36 @@ import {CustomerTemplateComponent} from "../customer-template/customer-template.
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  customers: any[] = [
+  customers:any[]=[
     {
-      id: 'COO1',
-      name: 'Ranil Kumara',
-      salary: 25000,
-      avatar: 'https://cdndailyexcelsior.b-cdn.net/wp-content/uploads/2022/07/Ranil-Wickremesinghe.jpg'
+      id:'C001',
+      name:'Sajith Premadsa',
+      salary:60000,
+      avatar:'https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcSM-9n_0pE6Ky6FziTCalbIp4gEvj7My6nI0wRvmqFnMaKSwsi50QmHBPuzQBDuFgoi0lOAtVwYZIb-6RM'
     },
     {
-      id: 'COO1',
-      name: 'Mahinda samantha',
-      salary: 25000,
-      avatar: 'https://images.livemint.com/rf/Image-621x414/LiveMint/Period2/2017/12/06/Photos/Processed/rajapaksa-kJNB--621x414@LiveMint.jpg'
+      id:'C002',
+      name:'Ranil Kumara',
+      salary:45000,
+      avatar:'https://nexttravelsrilanka.com/wp-content/uploads/2023/02/Ranil-Wickremesinghe.jpg'
     },
     {
-      id: 'COO1',
-      name: 'Namal',
-      salary: 25000,
-      avatar: 'https://cloudfront-us-east-2.images.arcpublishing.com/reuters/C6PZIGPCQRMP7C4PZKYD3TQWVI.jpg'
+      id:'C003',
+      name:'Mahinda Samatha',
+      salary:75000,
+      avatar:'https://bsmedia.business-standard.com/_media/bs/img/about-page/thumb/464_464/1649933026.jpg'
     },
     {
-      id: 'COO1',
-      name: 'Marvin silva',
-      salary: 25000,
-      avatar: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkuW2S-wtd0jqUBEI8NL-CELnu4F1fPQSiOgMEgOeEihr7AknfyY0l7bScCY3Wwp2OwhSzlS4PqSDYiAWqRFCLmiT7-kRA0VTy34FSnA80YlNtoKoaW8ORtuFw_ip5XgdKmhGmSQFs_ZP7/s1600/mer0.jpg'
+      id:'C004',
+      name:'gamaini dessanayake',
+      salary:60000,
+      avatar:'https://island.lk/wp-content/uploads/2020/10/gamini.jpg'
     },
     {
-      id: 'COO1',
-      name: 'anura Kumara',
-      salary: 25000,
-      avatar: 'https://upload.wikimedia.org/wikipedia/commons/6/63/President_of_Sri_Lanka_Mr._Anura_Kumara_Dissanayake_in_India.jpg'
-    }
+      id:'C005',
+      name:'Naml Gunathilaka',
+      salary:65000,
+      avatar:'https://bmkltsly13vb.compat.objectstorage.ap-mumbai-1.oraclecloud.com/cdn.ft.lk/assets/uploads/image_e5860c3eea.jpg'
+    },
   ];
 }

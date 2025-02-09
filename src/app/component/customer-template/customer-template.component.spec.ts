@@ -11,7 +11,7 @@ describe('CustomerTemplateComponent', () => {
       imports: [CustomerTemplateComponent]
     })
     .compileComponents();
-
+    
     fixture = TestBed.createComponent(CustomerTemplateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
