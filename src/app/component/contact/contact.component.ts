@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 import {PhotosService} from "../../services/photos.service";
 import {NgForOf} from "@angular/common";
 
@@ -12,26 +12,23 @@ import {NgForOf} from "@angular/common";
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-  photos: any[] = [];
-
+  photos:any[]=[];
   constructor(private _service: PhotosService) {
   }
-
-  load() {
+  load(){
     this.loadAllPhotos();
     this.loadAllComments();
   }
 
-  loadAllPhotos() {
+  loadAllPhotos(){
     this._service.findAllPhotos().subscribe({
-      next: (data) => this.photos = data,
-      error: (error) => console.log(error),
-      complete: () => console.log('completed')
+      next:(data)=> this.photos=data,
+      error:(error)=> console.log(error),
+      complete:()=> console.log('completed')
     });
   }
-
-  loadAllComments() {
-    this._service.findAllComments().subscribe(response => {
+  loadAllComments(){
+    this._service.findAllComments().subscribe(response=>{
       console.log(response);
     });
   }
